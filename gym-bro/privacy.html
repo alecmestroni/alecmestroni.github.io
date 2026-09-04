@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informativa sulla privacy · Gym Bro App</title>
+  <meta name="description" content="Informativa sulla privacy di Gym Bro App: quali dati tratta l'app, dove li conserva, come usa Google Drive e i servizi facoltativi, come cancellarli.">
+  <link rel="canonical" href="https://alecmestroni.github.io/gym-bro/privacy.html">
+  <style>
+    :root { color-scheme: light dark; --bg: #fafafa; --fg: #1a1a1a; --muted: #5a5a5a; --accent: #2f6fed; --card: #ffffff; --line: #e3e3e3; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #111214; --fg: #ececec; --muted: #a3a3a3; --accent: #7aa2ff; --card: #1a1b1e; --line: #2a2b2f; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    header, main, footer { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    header { padding-top: 36px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+    nav a { margin-left: 16px; }
+    a { color: var(--accent); }
+    h1 { font-size: 2rem; margin: 40px 0 .25rem; line-height: 1.2; }
+    p.meta { color: var(--muted); margin-top: 0; }
+    h2 { font-size: 1.3rem; margin: 36px 0 .5rem; }
+    h3 { font-size: 1.05rem; margin: 22px 0 .3rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: .3rem 0; }
+    code { font-size: .92em; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px; margin: 20px 0; }
+    .card p { margin: .4rem 0; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: .95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+    th { color: var(--muted); font-weight: 600; }
+    .wrap { overflow-x: auto; }
+    footer { margin-top: 48px; padding-bottom: 64px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); padding-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong><a href="./">Gym Bro App</a></strong>
+    <nav>
+      <a href="./">Home</a>
+      <a href="#google-drive">Google Drive</a>
+      <a href="#cancellazione">Cancellazione</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Informativa sulla privacy di Gym Bro App</h1>
+    <p class="meta">Ultimo aggiornamento: 4 settembre 2026 · Titolare del trattamento: Alec Mestroni, <a href="mailto:alecmestroni@gmail.com">alecmestroni@gmail.com</a></p>
+
+    <section class="card">
+      <p><strong>In breve.</strong> Gym Bro App è un'app Android personale per gestire allenamenti, massimali e progressione dei carichi.
+         Non ha account, non ha un server e non invia nulla allo sviluppatore. Tutti i dati vivono nella memoria privata dell'app sul tuo telefono.</p>
+      <p>Se scegli di collegare Google Drive, l'app carica un backup dei tuoi dati <strong>solo nella sua cartella nascosta</strong> di Drive
+         (permesso <em>drive.appdata</em>) e non può vedere gli altri tuoi file. Gli altri servizi esterni (assistente AI, ricerca alimenti)
+         sono facoltativi e si attivano solo su tua scelta. Niente pubblicità, analytics o tracciamento.</p>
+    </section>
+
+    <h2 id="ambito">1. A cosa si applica questa informativa</h2>
+    <p>Questa informativa descrive come Gym Bro App (di seguito "l'app") tratta i dati di chi la usa. L'app è sviluppata da Alec Mestroni
+       come progetto personale, non è pubblicata sugli store e viene installata direttamente come pacchetto Android (APK).
+       Si applica all'app e a questo sito; non si applica ai servizi di terze parti che decidi di collegare, che hanno le proprie informative
+       (riportate più avanti).</p>
+
+    <h2 id="dati">2. Quali dati tratta l'app</h2>
+    <p>L'app tratta esclusivamente i dati che inserisci tu o che autorizzi lei a leggere dal telefono. Nessuno di questi dati viene raccolto
+       dallo sviluppatore.</p>
+    <div class="wrap">
+    <table>
+      <tr><th>Categoria</th><th>Esempi</th><th>Origine</th></tr>
+      <tr><td>Allenamento</td><td>Catalogo esercizi, schede e piani, sedute registrate (set, ripetizioni, carichi), massimali stimati e reali, obiettivi, periodi di stop, infortuni annotati, contesto delle sedute</td><td>Inseriti da te nell'app</td></tr>
+      <tr><td>Corpo</td><td>Peso corporeo, misure, composizione corporea, foto dei progressi (facoltative)</td><td>Inseriti da te; peso e composizione anche da una bilancia Bluetooth se la colleghi</td></tr>
+      <tr><td>Profilo</td><td>I dati che scegli di inserire nel profilo (ad esempio sesso, età, altezza), preferenze dell'app (tema, unità, incremento minimo, promemoria)</td><td>Inseriti da te</td></tr>
+      <tr><td>Salute (facoltativo)</td><td>Passi, sonno, battiti a riposo e durante l'esercizio, variabilità cardiaca, VO2 max, calorie, peso, sedute cardio con distanza, velocità e percorso</td><td>Letti da <strong>Health Connect</strong> solo dopo la tua autorizzazione esplicita, per ogni tipo di dato</td></tr>
+      <tr><td>Dispositivi Bluetooth (facoltativo)</td><td>Peso e impedenza da una bilancia compatibile, battiti da una fascia o da un orologio usato come fascia cardio</td><td>Letti dal dispositivo che colleghi, via Bluetooth, solo mentre lo usi</td></tr>
+      <tr><td>Nutrizione (facoltativo)</td><td>Alimenti salvati, diario alimentare, obiettivi giornalieri, integratori</td><td>Inseriti da te</td></tr>
+    </table>
+    </div>
+    <p>L'app non tratta dati di pagamento, contatti, posizione in tempo reale (il percorso di una corsa arriva da Health Connect, già registrato da un'altra app) né identificatori pubblicitari.</p>
+
+    <h2 id="dove">3. Dove sono conservati i dati</h2>
+    <ul>
+      <li><strong>Sul tuo telefono</strong>, nella memoria privata dell'app (area riservata dal sistema Android alla singola app, non leggibile da altre app senza permessi di root).</li>
+      <li><strong>Nessun server dello sviluppatore</strong>: l'app non ha un backend, non crea account e non registra utenti.</li>
+      <li><strong>Nei backup che decidi tu</strong>: file di esportazione che salvi dove vuoi, copie automatiche in una cartella a tua scelta (anche su un servizio cloud, tramite il selettore di file di Android), oppure la cartella privata dell'app su Google Drive descritta nella sezione seguente.</li>
+    </ul>
+
+    <h2 id="google-drive">4. Google Drive e dati dell'utente Google</h2>
+    <p>Il backup su Google Drive è <strong>facoltativo</strong> e disattivato finché non lo colleghi da <em>Impostazioni → Backup → Google Drive</em>.</p>
+
+    <h3>Quale accesso chiede l'app</h3>
+    <ul>
+      <li>L'app chiede a Google l'unico ambito <code>https://www.googleapis.com/auth/drive.appdata</code> ("Visualizza, crea ed elimina i dati di configurazione dell'app su Google Drive").</li>
+      <li>Questo ambito dà accesso <strong>esclusivamente alla cartella nascosta riservata all'app</strong> (<em>appDataFolder</em>): l'app non può leggere, cercare, modificare né cancellare nessun altro file del tuo Drive.</li>
+      <li>L'autenticazione avviene con OAuth 2.0 e PKCE tramite il browser di sistema; l'app non vede mai la tua password Google.</li>
+      <li>Oltre al contenuto della cartella, l'app legge dall'API di Drive solo lo spazio disponibile e l'indirizzo email dell'account collegato, per mostrarti a quale account è agganciato il backup.</li>
+    </ul>
+
+    <h3>Cosa viene caricato e quando</h3>
+    <ul>
+      <li>Un file ZIP con l'esportazione completa dei dati dell'app (tutte le categorie della sezione 2). Le <strong>foto dei progressi sono escluse</strong> per impostazione predefinita e vengono incluse solo se attivi l'opzione apposita.</li>
+      <li>L'app tenta un backup circa <strong>ogni 6 ore</strong>, anche da chiusa, quando ci sono modifiche da salvare e la rete è disponibile; puoi anche avviarlo a mano.</li>
+      <li>I backup vengono <strong>ruotati automaticamente</strong>: l'app conserva gli ultimi 14 giornalieri e gli ultimi 8 settimanali e cancella i più vecchi.</li>
+    </ul>
+
+    <h3>Come vengono usati i dati di Google</h3>
+    <ul>
+      <li>I dati ottenuti tramite le API di Google servono <strong>solo</strong> a salvare e ripristinare i tuoi backup. Non vengono usati per pubblicità, non vengono venduti, non vengono trasferiti a terzi e non vengono letti da persone, salvo con il tuo consenso esplicito o per obblighi di legge.</li>
+      <li>L'uso e il trasferimento a qualsiasi altra app delle informazioni ricevute dalle API di Google da parte di Gym Bro App rispettano le <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Norme sui dati utente dei servizi API di Google</a>, inclusi i requisiti di utilizzo limitato (<em>Limited Use</em>).</li>
+      <li>I <strong>token di accesso</strong> rilasciati da Google sono conservati sul telefono nell'archivio sicuro di Android (Keystore, tramite <em>expo-secure-store</em>), separati dagli altri dati: non finiscono mai nelle esportazioni, nei backup né sul sito.</li>
+    </ul>
+
+    <h3>Come scollegare Google Drive</h3>
+    <ul>
+      <li><strong>Nell'app</strong>: <em>Impostazioni → Backup → Google Drive → Scollega</em> cancella i token dal telefono e interrompe i backup automatici.</li>
+      <li><strong>Nel tuo account Google</strong>: da <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a> puoi revocare l'accesso di "Gym Bro App" in qualsiasi momento.</li>
+      <li><strong>Per cancellare i backup</strong> già caricati: in Google Drive, <em>Impostazioni → Gestisci app → Gym Bro App → Elimina i dati nascosti dell'app</em>. I file nella cartella nascosta si vedono solo così, non nell'elenco dei file normali.</li>
+    </ul>
+
+    <h2 id="terze-parti">5. Altri servizi esterni (tutti facoltativi)</h2>
+    <p>Fuori da Google Drive, l'app contatta servizi esterni solo quando usi una funzione che li richiede. Ognuno è disattivato finché non lo scegli.</p>
+    <ul>
+      <li><strong>OpenRouter (assistente AI)</strong>: attivo solo se inserisci una <em>tua</em> chiave API in <em>Impostazioni → AI</em>, conservata sul telefono. Quando chiedi un suggerimento, l'app invia a OpenRouter il testo della richiesta e il contesto necessario a rispondere (nomi degli esercizi e attrezzatura disponibile, un riepilogo delle sedute recenti, gli infortuni annotati). Non invia foto, dati di Health Connect, backup né dati dell'account Google. Il trattamento da parte di OpenRouter e del modello scelto è regolato dall'<a href="https://openrouter.ai/privacy" rel="noopener">informativa di OpenRouter</a>.</li>
+      <li><strong>Open Food Facts (ricerca alimenti)</strong>: quando cerchi un alimento nel diario, l'app invia solo il testo cercato o il codice a barre al database pubblico <a href="https://world.openfoodfacts.org" rel="noopener">Open Food Facts</a>. Nessun dato personale.</li>
+      <li><strong>Health Connect</strong>: è un componente del telefono, non un servizio remoto. L'app legge solo i tipi di dato che autorizzi, non scrive nulla e conserva quello che legge nella propria memoria privata (e quindi nei backup che scegli di fare).</li>
+      <li><strong>Bluetooth</strong>: bilancia e fascia cardio comunicano direttamente con il telefono. L'app non trasmette nulla al dispositivo oltre ai comandi di lettura.</li>
+      <li><strong>"Allenati insieme"</strong>: per allenarti con un'altra persona, la scheda viene passata da un telefono all'altro con un codice QR mostrato a schermo. Viene condiviso solo il contenuto della scheda che scegli; non passa da nessun server.</li>
+      <li><strong>Controllo di rete</strong>: prima di un backup l'app fa una richiesta vuota a un indirizzo di Google (<code>gstatic.com/generate_204</code>) per capire se c'è connessione. Non trasporta dati.</li>
+    </ul>
+
+    <h2 id="condivisione">6. Condivisione con terzi</h2>
+    <p>Lo sviluppatore non riceve, non condivide e non vende alcun dato: non ne ha accesso. I dati escono dal telefono solo nei casi delle sezioni 4 e 5, sempre su tua azione, verso il servizio che hai scelto e nella misura descritta.</p>
+
+    <h2 id="analytics">7. Pubblicità, analytics e tracciamento</h2>
+    <p>L'app non contiene pubblicità, SDK di analytics, crash reporting remoto, identificatori pubblicitari né tracciamento di alcun tipo. Questo sito è statico e non usa cookie né strumenti di analisi.</p>
+
+    <h2 id="cancellazione">8. Conservazione e cancellazione</h2>
+    <ul>
+      <li>I dati restano sul telefono finché non li cancelli dall'app (ogni scheda, seduta, misura o foto si può eliminare singolarmente) o finché non disinstalli l'app, che rimuove tutta la sua memoria privata.</li>
+      <li>I backup su Google Drive seguono la rotazione della sezione 4 e si cancellano come descritto lì; i backup in una cartella a tua scelta e le esportazioni sono file tuoi, che gestisci tu.</li>
+      <li>La chiave OpenRouter si cancella da <em>Impostazioni → AI</em>; i token Google con <em>Scollega</em>.</li>
+    </ul>
+
+    <h2 id="sicurezza">9. Sicurezza</h2>
+    <p>I dati sono nell'area privata dell'app protetta dal sistema Android; i token e le chiavi API nell'archivio sicuro del dispositivo; tutte le comunicazioni con i servizi esterni avvengono su HTTPS. Come per qualsiasi app, la protezione dei dati sul telefono dipende anche dal blocco schermo e dalla cifratura del dispositivo.</p>
+
+    <h2 id="diritti">10. I tuoi diritti</h2>
+    <p>Poiché i dati sono conservati esclusivamente sul tuo dispositivo e negli spazi che controlli tu, i diritti di accesso, rettifica, portabilità e cancellazione previsti dal GDPR si esercitano direttamente nell'app (esportazione, modifica ed eliminazione dei dati). Per qualsiasi domanda o richiesta puoi scrivere al titolare all'indirizzo indicato in fondo.</p>
+
+    <h2 id="minori">11. Minori</h2>
+    <p>L'app non è destinata a persone di età inferiore a 14 anni e non raccoglie consapevolmente dati da minori.</p>
+
+    <h2 id="modifiche">12. Modifiche a questa informativa</h2>
+    <p>Eventuali modifiche vengono pubblicate su questa pagina, aggiornando la data in cima. Le modifiche sostanziali al modo in cui l'app tratta i dati sono segnalate anche nelle note di rilascio dell'app.</p>
+
+    <h2 id="contatti">13. Contatti</h2>
+    <p>Titolare del trattamento: <strong>Alec Mestroni</strong> · <a href="mailto:alecmestroni@gmail.com">alecmestroni@gmail.com</a></p>
+
+    <h2 id="english">English summary</h2>
+    <p><em>Gym Bro App</em> is a personal Android app for managing gym training cards, one-rep maxes and load progression. It has no accounts and no developer server: all data (training, body measurements, optional health data read from Health Connect with your permission, optional nutrition data) stays in the app's private storage on your phone. If you choose to link Google Drive, the app requests only the <code>drive.appdata</code> scope and stores a ZIP backup of your data in its hidden app folder (photos excluded unless you enable them), roughly every 6 hours, keeping the last 14 daily and 8 weekly copies. Google user data is used solely to save and restore your backups and is never sold, shared or used for advertising; the app's use of Google API data complies with the Google API Services User Data Policy, including the Limited Use requirements. OAuth tokens live in the device's secure storage. You can unlink Drive from the app settings, revoke access at myaccount.google.com/permissions and delete hidden app data from Google Drive settings. Optional third-party services (OpenRouter with your own API key, Open Food Facts search) are contacted only when you use those features. No ads, analytics or tracking. Contact: alecmestroni@gmail.com.</p>
+  </main>
+
+  <footer>
+    © 2026 Alec Mestroni · <a href="./">Gym Bro App</a> · <a href="/">Home</a>
+  </footer>
+</body>
+</html>

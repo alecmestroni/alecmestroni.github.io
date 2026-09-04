@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Bro App</title>
+  <meta name="description" content="Gym Bro App: app Android per gestire schede di allenamento, massimali e progressione dei carichi. I dati restano sul telefono, con backup opzionale su Google Drive.">
+  <link rel="canonical" href="https://alecmestroni.github.io/gym-bro/">
+  <style>
+    :root { color-scheme: light dark; --bg: #fafafa; --fg: #1a1a1a; --muted: #5a5a5a; --accent: #2f6fed; --card: #ffffff; --line: #e3e3e3; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #111214; --fg: #ececec; --muted: #a3a3a3; --accent: #7aa2ff; --card: #1a1b1e; --line: #2a2b2f; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    header, main, footer { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    header { padding-top: 36px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+    nav a { margin-left: 16px; }
+    a { color: var(--accent); }
+    h1 { font-size: 2.4rem; margin: 40px 0 .25rem; line-height: 1.15; }
+    p.lead { font-size: 1.15rem; color: var(--muted); margin-top: 0; }
+    h2 { font-size: 1.35rem; margin: 36px 0 .5rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: .3rem 0; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px; margin: 20px 0; }
+    .card p { margin: .4rem 0; }
+    footer { margin-top: 48px; padding-bottom: 64px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); padding-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Gym Bro App</strong>
+    <nav>
+      <a href="#cosa-fa">Cosa fa</a>
+      <a href="#dati">I tuoi dati</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Gym Bro App</h1>
+    <p class="lead">L'app Android per gestire le schede di allenamento in palestra, i massimali e la progressione dei carichi, seduta dopo seduta.</p>
+
+    <section class="card">
+      <p><strong>Gym Bro App è un progetto personale</strong> sviluppato da Alec Mestroni. Non è pubblicata sugli store:
+         viene installata direttamente dallo sviluppatore come pacchetto Android (APK) sui telefoni di chi la usa.</p>
+      <p>Non richiede un account e non ha un server: tutto quello che inserisci resta sul tuo telefono.
+         Leggi l'<a href="privacy.html">informativa sulla privacy</a>.</p>
+    </section>
+
+    <h2 id="cosa-fa">Cosa fa</h2>
+    <ul>
+      <li><strong>Schede di allenamento</strong>: crea e organizza le schede per tipo (standard, forza, finisher), con gli esercizi del tuo catalogo e i gruppi muscolari.</li>
+      <li><strong>Massimali e carichi proposti</strong>: stima il massimale (1RM) dai tuoi set, propone i pesi per ogni serie e fa avanzare la progressione quando completi il lavoro previsto.</li>
+      <li><strong>Diario delle sedute</strong>: spunta i set durante l'allenamento, con timer di recupero e storico completo di ogni esercizio.</li>
+      <li><strong>Corpo libero ed elastici</strong>: varianti, elastici di resistenza e progressioni per chi si allena senza bilanciere.</li>
+      <li><strong>Statistiche e grafici</strong>: andamento dei carichi, del volume e del peso corporeo nel tempo.</li>
+      <li><strong>Recupero e prontezza</strong>: leggi da Health Connect passi, sonno, battiti e sedute cardio, e usa una bilancia o una fascia cardio Bluetooth, per capire quanto sei pronto ad allenarti.</li>
+      <li><strong>Nutrizione</strong>: diario alimentare con ricerca degli alimenti su Open Food Facts e obiettivi giornalieri.</li>
+      <li><strong>Assistente AI facoltativo</strong>: suggerimenti sugli esercizi e sulla seduta, se scegli di collegare una tua chiave OpenRouter.</li>
+      <li><strong>Backup</strong>: esporta e importa tutti i dati, salva copie automatiche in una cartella a tua scelta oppure, se lo colleghi, nella cartella privata dell'app su <strong>Google Drive</strong>.</li>
+    </ul>
+
+    <h2 id="dati">I tuoi dati</h2>
+    <p>Gym Bro App conserva schede, sedute, massimali, misure e tutto il resto <strong>nella memoria privata dell'app sul tuo telefono</strong>.
+       Nessun dato viene inviato allo sviluppatore. L'app non contiene pubblicità, analytics o strumenti di tracciamento.</p>
+    <p>Se attivi il backup su Google Drive, l'app chiede a Google solo il permesso <em>drive.appdata</em>: può scrivere e leggere
+       <strong>esclusivamente nella sua cartella nascosta</strong> di Drive, mai gli altri tuoi file. Puoi scollegarla in ogni momento
+       dalle impostazioni dell'app o dal tuo account Google.</p>
+    <p>Tutti i dettagli, servizio per servizio, sono nell'<a href="privacy.html">informativa sulla privacy</a>.</p>
+
+    <h2 id="contatti">Contatti</h2>
+    <p>Per domande sull'app o sul trattamento dei dati scrivi a <a href="mailto:alecmestroni@gmail.com">alecmestroni@gmail.com</a>.</p>
+  </main>
+
+  <footer>
+    © 2026 Alec Mestroni · <a href="privacy.html">Informativa sulla privacy</a> · <a href="/">Home</a>
+  </footer>
+</body>
+</html>
